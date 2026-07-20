@@ -1,0 +1,28 @@
+---
+title: "Apa Sebenarnya yang Dilakukan dalam Reverse Engineering (Lebih dari Sekadar 3D Scanning)"
+excerpt: "Scanning sebuah part adalah bagian yang mudah. Mengubah hasil scan tersebut menjadi gambar yang bisa diproduksi dan bertoleransi tepat — di situlah pekerjaan engineering yang sesungguhnya terjadi."
+date: "2025-12-05"
+category: "Mechanical Design"
+tags: ["reverse engineering", "CAD", "metrology"]
+author: "Tim Ferrotype Engineering"
+---
+
+Saat gambar asli sebuah part hilang — sering kali karena pembuat mesinnya sudah tidak beroperasi lagi, atau part tersebut lebih tua dari catatan digital apa pun — reverse engineering biasanya diusulkan sebagai solusi cepat: scan part-nya, ambil modelnya, selesai. Padahal, itu baru langkah pertama dari beberapa tahap berikutnya.
+
+## Scanning menangkap geometri, bukan maksud desain
+
+3D scan menangkap geometri part persis seperti kondisinya sekarang, termasuk keausan, perbaikan sebelumnya, dan variasi manufacturing. Scan tidak memberi tahu Anda permukaan mana yang secara fungsi kritis dan mana yang sekadar kebetulan. Seorang engineer harus menafsirkan hasil scan berdasarkan fungsi part tersebut untuk merekonstruksi geometri yang *dimaksudkan*, bukan sekadar geometri *hasil pengukuran*.
+
+## Tolerance harus disimpulkan, bukan diukur langsung
+
+Anda tidak bisa mengukur tolerance desain langsung dari part yang sudah terpakai — Anda hanya bisa mengukur dimensinya saat ini. Menyimpulkan tolerance aslinya membutuhkan pemahaman tentang part yang bertemu dengannya (mating part), proses assembly, dan konsekuensi kegagalan jika tolerance-nya lebih ketat atau lebih longgar dari yang diasumsikan.
+
+## Identifikasi material menutup celah yang tersisa
+
+Tanpa spesifikasi, mengganti part dengan grade baja atau jenis polymer yang salah bisa diam-diam mengurangi fatigue life atau ketahanan kimianya. Pengujian spectrometric atau hardness sering diperlukan untuk memastikan properti material sebelum finalisasi rekonstruksi.
+
+## Hasil akhirnya harus berupa paket gambar yang bisa langsung dipakai, bukan sekadar file CAD
+
+Part hasil reverse engineering baru berguna jika machine shop atau pembuat mould bisa melakukan quotation dan membuatnya dengan percaya diri. Artinya harus ada GD&T, catatan surface finish, dan spesifikasi material — dengan tingkat kedisiplinan yang sama seperti desain original, hanya saja arahnya dari belakang ke depan.
+
+Jika dikerjakan dengan benar, reverse engineering menghilangkan risiko single-source secara permanen, bukan sekadar menghasilkan pengganti sementara yang rapuh.
